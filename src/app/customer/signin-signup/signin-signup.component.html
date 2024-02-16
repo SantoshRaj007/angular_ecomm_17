@@ -1,1 +1,77 @@
-<p>signin-signup works!</p>
+<div class="jumbotron">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3 mt-5">                
+                <form>
+                    <div class="card shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h3 class="h3 fw-normal text-center mb-3">Registration</h3>
+                            </div>
+                            <div class="row form-group">
+                                <div class="col-md-6 mb-3">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" formControlName="name" placeholder="Name">                        
+                                        <label for="name">Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="form-floating">
+                                        <input type="tel" class="form-control" formControlName="mobName" placeholder="Mobile Number">
+                                        <label for="mob">Mobile Number</label>
+                                    </div>
+                                </div>                               
+                            </div>
+
+                            <div class="row form-group">
+                                <div class="col-md-6 mb-3">
+                                    <div class="form-floating">
+                                        <input type="number" class="form-control" formControlName="age" placeholder="Enter Your Age">
+                                        <label for="age">Enter Your Age</label>
+                                    </div>
+                                </div> 
+                                <div class="col-md-6 mb-3">
+                                    <div class="form-floating">
+                                        <input type="date" class="form-control" formControlName="dob" placeholder="Enter Your DOB">
+                                        <label for="dob">Enter Your DOB</label>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- New Row -->
+                            <div class="row form-group mt-3">
+                                <div class="col-md-6 mb-3">
+                                    <div class="form-floating ">
+                                        <input type="email" class="form-control" placeholder="santosh@gmail.com" formControlName="email">
+                                        <label for="email">Enter Your Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="password" class="form-control" placeholder="Enter Your Password" formControlName="password">
+                                        <label for="password">Enter Your Password</label>
+                                    </div>
+                                </div>                        
+                            </div>
+                            <!-- End New Row -->
+                            <div class="row form-group">
+                                <div class="col-md-6 mb-3">
+                                    <div class="form-group mb-3">
+                                        <label for="Address">Address</label>
+                                        <textarea class="form-control" formControlName="addLine1" rows="3"></textarea>   
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="form-group mb-3">
+                                        <label for="Address">Address1</label>
+                                        <textarea class="form-control" formControlName="addLine2" rows="3"></textarea>   
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
