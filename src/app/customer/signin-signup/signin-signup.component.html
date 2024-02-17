@@ -56,18 +56,48 @@
                             <!-- End New Row -->
                             <div class="row form-group">
                                 <div class="col-md-6 mb-3">
-                                    <div class="form-group mb-3">
-                                        <label for="Address">Address</label>
+                                    <div class="form-group">
+                                        <label for="Address" class="mb-2">Address</label>
                                         <textarea class="form-control" formControlName="addLine1" rows="3"></textarea>   
                                     </div>
                                 </div>
                                 <div class="col-md-6 mb-3">
-                                    <div class="form-group mb-3">
-                                        <label for="Address">Address1</label>
+                                    <div class="form-group">
+                                        <label for="Address" class="mb-2">Address1</label>
                                         <textarea class="form-control" formControlName="addLine2" rows="3"></textarea>   
                                     </div>
                                 </div>
-                            </div>  
+                            </div> 
+                            <div class="row form-group">
+                                <div class="col-md-6 mb-3">
+                                    <label for="city" class="mb-2">Enter City</label>
+                                    <input type="text" class="form-control" formControlName="city" placeholder="Enter City">
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="state" class="mb-2">State</label>
+                                    <select name="state" id="" class="form-control" formControlName="state">
+                                        <option value="">Select State</option>
+                                        <option value="Delhi">Delhi</option>
+                                        <option value="Bihar">Bihar</option>
+                                        <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                        <option value="Mumbai">Mumbai</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <div class="col-md-6 mb-3"> 
+                                    <label for="zipCode" class="mb-2">ZipCode</label>
+                                    <input type="number" class="form-control" formControlName="zipCode" placeholder="Enter ZipCode">
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="language" class="mb-2">Language</label>
+                                    <select name="language" id="" class="form-control" formControlName="language">
+                                        <option value="">Select Language</option>
+                                        <option value="eng">ENG</option>
+                                        <option value="hin">HIN</option>
+                                    </select>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </form>
