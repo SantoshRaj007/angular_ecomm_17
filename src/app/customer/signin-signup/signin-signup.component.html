@@ -1,10 +1,10 @@
 <div class="jumbotron">
     <div class="container">
         <div class="row">
-            <div class="col-md-6 offset-md-3 mt-5">                
-                <form>
-                    <div class="card shadow-lg p-3 mb-5 bg-body-tertiary rounded">
-                        <div class="card-body">
+            <div class="col-md-6 offset-md-3 mt-5">  
+                <div class="card shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+                    <div class="card-body">              
+                        <form [formGroup]="signUpForm" (ngSubmit)="onSubmitSignUp">
                             <div class="card-title">
                                 <h3 class="h3 fw-normal text-center mb-3">Registration</h3>
                             </div>
@@ -17,7 +17,7 @@
                                 </div>
                                 <div class="col-md-6 mb-3">
                                     <div class="form-floating">
-                                        <input type="tel" class="form-control" formControlName="mobName" placeholder="Mobile Number">
+                                        <input type="tel" class="form-control" formControlName="mobNumber" placeholder="Mobile Number">
                                         <label for="mob">Mobile Number</label>
                                     </div>
                                 </div>                               
@@ -75,7 +75,7 @@
                                 </div>
                                 <div class="col-md-6 mb-3">
                                     <label for="state" class="mb-2">State</label>
-                                    <select name="state" id="" class="form-control" formControlName="state">
+                                    <select id="inputState" class="form-control" formControlName="state">
                                         <option value="">Select State</option>
                                         <option value="Delhi">Delhi</option>
                                         <option value="Bihar">Bihar</option>
@@ -87,7 +87,7 @@
                             <div class="row form-group">
                                 <div class="col-md-6 mb-3"> 
                                     <label for="zipCode" class="mb-2">ZipCode</label>
-                                    <input type="number" class="form-control" formControlName="zipCode" placeholder="Enter ZipCode">
+                                    <input type="text" class="form-control" formControlName="zipCode" placeholder="Enter ZipCode">
                                 </div>
                                 <div class="col-md-6 mb-3">
                                     <label for="language" class="mb-2">Language</label>
@@ -98,9 +98,104 @@
                                     </select>
                                 </div>
                             </div>
-                        </div>
+                            <div class="form-group">
+                                <label for="gender">Gender</label>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" class="form-check-inline" formControlName="gender" value="Male">
+                                    <label for="male" class="form-checkinline">Male</label>                                    
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" class="form-check-inline" formControlName="gender" value="Female">
+                                    <label for="female" class="form-checkinline">Female</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" class="form-check-inline" formControlName="gender" value="others" >
+                                    <label for="others" class="form-checkinline">Others</label>
+                                </div>
+                            </div>
+                            <div class="row form-group mt-3">
+                                <div class="col-md-12 mb-3">
+                                    <div class="form-group">
+                                        <label for="aboutYou" class="mb-2">Something About You</label>
+                                        <textarea class="form-control" formControlName="aboutYou" rows="3"></textarea>   
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <div class="col-md-12 mb-3">
+                                    <div class="form-group">
+                                        <label for="uploadPhoto  " class="mb-2">Upload Your Photo</label>
+                                        <input type="file" class="form-control" formControlName="uploadPhoto">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <div class="col-md-12 mb-3"> 
+                                    <input type="checkbox" class="form-check-inline" formControlName="agreetc">
+                                    <label for="agreetc" class="form-check-inline">Terms and Conditions</label>
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <div class="col-md-6 mb-3"> 
+                                    <label for="role" class="mb-2">what do you want ?</label>
+                                    <select name="role" class="form-control" formControlName="role">
+                                        <option value="seller">Seller</option>
+                                        <option value="buyer">Buyer</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form form-group">
+                                <button class="btn btn-primary" type="submit">Register</button>
+                            </div>
+                        </form>
+                        <!-- Login Form -->
+                        <div class="row form-group mt-2">
+                            <div class="col-md-12">
+                                <a class="sim-pointer" routerLink="/sign-in">Already have account Click Here to Login</a>
+                            </div>
+                        </div>        
                     </div>
-                </form>
+                </div>
+            </div>
+
+            <div class="col-md-6 offset-md-3">                
+                <div class="card shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+                    <div class="card-body">
+                        <form>
+                            <div class="card-title">
+                                <h3 class="h3 fw-normal text-center mb-3">Login</h3>
+                            </div>
+                            <div class="row form-group">
+                                <div class="col-md-8 offset-md-2 mb-2">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" placeholder="santosh@gmail.com" name="userEmail">
+                                        <label for="email">Enter Your Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 offset-md-2 mb-2">
+                                    <div class="form-floating">
+                                        <input type="password" class="form-control" name="userPassword" placeholder="Enter Password">
+                                        <label for="password">Enter Your Password</label>
+                                    </div>
+                                </div>                               
+                            </div>
+                            <!-- <div class="row form-group mb-2">
+                                <div class="col-md-8 offset-md-2"> 
+                                    <input type="checkbox" class="form-check-inline" formControlName="agreetc">
+                                    <label for="agreetc" class="form-check-inline">Terms and Conditions</label>
+                                </div>
+                            </div> -->
+                            <div class="form form-group offset-md-2">
+                                <button class="btn btn-primary" type="submit">Login</button>
+                            </div>
+                        </form>
+                        <div class="row form-group mt-2">
+                            <div class="col-md-8 offset-md-2">
+                                <a class="sim-pointer" routerLink="/sign-up">Don't have an account please Register</a>
+                            </div>
+                        </div>
+                    </div>                        
+                </div>
             </div>
         </div>
     </div>
