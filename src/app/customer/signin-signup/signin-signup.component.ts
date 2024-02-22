@@ -20,7 +20,7 @@ export class SigninSignupComponent {
     signUpSubmitted = false;
     href:string = '';
     user_data:any;
-    user_details!:User;
+    user_dto!:User;
     user_reg_data:any;
     signInFormValue:any = {};
 
@@ -68,7 +68,7 @@ export class SigninSignupComponent {
 
         this.user_reg_data = this.signUpForm.value;
 
-        this.user_details = {
+        this.user_dto = {
             aboutYou:this.user_reg_data.aboutYou,
             age:this.user_reg_data.age,
             agreetc:this.user_reg_data.agreetc,
@@ -77,11 +77,11 @@ export class SigninSignupComponent {
             gender:this.user_reg_data.gender,
             address:{
                 id: 0,
-                addLine1: this.user_reg_data.addLine1,
-                addLine2: this.user_reg_data.addLine2,
-                city: this.user_reg_data.city,
-                state: this.user_reg_data.state,
-                zipCode: this.user_reg_data.zipCode,
+                addLine1:this.user_reg_data.addLine1,
+                addLine2:this.user_reg_data.addLine2,
+                city:this.user_reg_data.city,
+                state:this.user_reg_data.state,
+                zipCode:this.user_reg_data.zipCode,
             },
             language:this.user_reg_data.language,
             mobNumber:this.user_reg_data.mobNumber,
@@ -91,7 +91,7 @@ export class SigninSignupComponent {
             role:this.user_reg_data.role
         }
 
-        this.loginService.userRegister(this.user_details).subscribe(data=>{
+        this.loginService.userRegister(this.user_dto).subscribe(data=>{
             alert("User Register Successfully..!!");
             this.router.navigateByUrl('sign-in');
         })
