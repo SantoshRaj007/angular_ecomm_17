@@ -7,7 +7,7 @@
             "age": 29,
             "dob": "1994-01-05",
             "email": "admin@gmail.com",
-            "password": "admin",
+            "password": "123456",
             "address":{
                 "addLine1": "Pandav Nagar",
                 "addLine2": "Mayur Vihar Phase-1",
@@ -33,7 +33,7 @@
             "age": 29,
             "dob": "1994-01-05",
             "email": "pradeep@gmail.com",
-            "password": "admin",
+            "password": "123456",
             "address":{
                 "addLine1": "Pandav Nagar",
                 "addLine2": "Mayur Vihar Phase-1",

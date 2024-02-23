@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { Router, RouterLink } from '@angular/router';
 import { User } from '../../core/Model/object-model';
 import { LoginSignupService } from '../../shared/services/login-signup.service';
@@ -9,14 +9,14 @@ import { HttpClientModule } from '@angular/common/http';
 @Component({
   selector: 'app-signin-signup',
   standalone: true,
-  imports: [CommonModule, RouterLink, HttpClientModule, ReactiveFormsModule],
+  imports: [CommonModule, RouterLink, HttpClientModule, ReactiveFormsModule, FormsModule],
   templateUrl: './signin-signup.component.html',
   styleUrl: './signin-signup.component.css'
 })
 export class SigninSignupComponent {
     regForm:boolean = false;
-    signUpForm!: FormGroup;
-    signInForm!: FormGroup;
+    signUpform!: FormGroup;
+    signInform!: FormGroup;
     signUpSubmitted = false;
     href:string = '';
     user_data:any;
@@ -35,7 +35,7 @@ export class SigninSignupComponent {
         } else if(this.href == '/sign-in'){
             this.regForm = false;
         }
-        this.signUpForm = this.formBuilder.group({
+        this.signUpform = this.formBuilder.group({
             name:['', Validators.required],
             mobNumber:['', Validators.required],
             age:['', Validators.required],
@@ -56,17 +56,17 @@ export class SigninSignupComponent {
         });
     }
 
-    get ref() {
-        return this.signUpForm.controls;
+    get rf() {
+        return this.signUpform.controls;
     }
 
     onSubmitSignUp(){
         this.signUpSubmitted = true;
-        if (this.signUpForm.invalid) {
+        if (this.signUpform.invalid) {
             return;
         }
 
-        this.user_reg_data = this.signUpForm.value;
+        this.user_reg_data = this.signUpform.value;
 
         this.user_dto = {
             aboutYou:this.user_reg_data.aboutYou,
@@ -93,7 +93,31 @@ export class SigninSignupComponent {
 
         this.loginService.userRegister(this.user_dto).subscribe(data=>{
             alert("User Register Successfully..!!");
-            this.router.navigateByUrl('sign-in');
+            this.router.navigateByUrl('/sign-in');
+        })
+    }
+
+    onSubmitSignIn() {
+        this.loginService.authLogin(this.signInFormValue.userEmail, this.signInFormValue.userPassword).subscribe(data=>{
+            this.user_data = data;
+            if (this.user_data.length == 1) {
+                if (this.user_data[0].role == "seller") {
+                    sessionStorage.setItem("user_session_id", this.user_data[0].id);
+                    sessionStorage.setItem("role", this.user_data[0].role);
+                    this.router.navigateByUrl('/seller-dashboard');
+                } else if (this.user_data[0].role == "buyer") {
+                    sessionStorage.setItem("user_session_id", this.user_data[0].id);
+                    sessionStorage.setItem("role", this.user_data[0].role);
+                    this.router.navigateByUrl('/buyer-dashboard');
+                } else{
+                    alert("Invalid login user and password");
+                }
+            } else {
+                alert("Invalid");
+            }
+            console.log(this.user_data);
+        }, error=>{
+            console.log("Error", error);
         })
     }
 }

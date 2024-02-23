@@ -1,10 +1,10 @@
 <div class="jumbotron">
     <div class="container">
         <div class="row">
-            <div class="col-md-6 offset-md-3 mt-5">  
+            <div class="col-md-6 offset-md-3 mt-5" *ngIf="regForm">  
                 <div class="card shadow-lg p-3 mb-5 bg-body-tertiary rounded">
                     <div class="card-body">              
-                        <form [formGroup]="signUpForm" (ngSubmit)="onSubmitSignUp">
+                        <form [formGroup]="signUpform" (ngSubmit)="onSubmitSignUp()">
                             <div class="card-title">
                                 <h3 class="h3 fw-normal text-center mb-3">Registration</h3>
                             </div>
@@ -158,33 +158,27 @@
                 </div>
             </div>
 
-            <div class="col-md-6 offset-md-3">                
+            <div class="col-md-6 offset-md-3 mt-5" *ngIf="!regForm">                
                 <div class="card shadow-lg p-3 mb-5 bg-body-tertiary rounded">
                     <div class="card-body">
-                        <form>
+                        <form  name="form" #tf="ngForm" (ngSubmit)="tf.form.valid && onSubmitSignIn()" novalidate>
                             <div class="card-title">
                                 <h3 class="h3 fw-normal text-center mb-3">Login</h3>
                             </div>
                             <div class="row form-group">
                                 <div class="col-md-8 offset-md-2 mb-2">
                                     <div class="form-floating">
-                                        <input type="email" class="form-control" placeholder="santosh@gmail.com" name="userEmail">
+                                        <input type="email" class="form-control" placeholder="santosh@gmail.com" name="userEmail" [(ngModel)]="signInFormValue.userEmail" #userEmail="ngModel" required email>
                                         <label for="email">Enter Your Email</label>
                                     </div>
                                 </div>
                                 <div class="col-md-8 offset-md-2 mb-2">
                                     <div class="form-floating">
-                                        <input type="password" class="form-control" name="userPassword" placeholder="Enter Password">
+                                        <input type="password" class="form-control" name="userPassword" placeholder="Enter Password" #userPassword="ngModel" [(ngModel)]="signInFormValue.userPassword" minlength="6" togglepassword>
                                         <label for="password">Enter Your Password</label>
                                     </div>
                                 </div>                               
                             </div>
-                            <!-- <div class="row form-group mb-2">
-                                <div class="col-md-8 offset-md-2"> 
-                                    <input type="checkbox" class="form-check-inline" formControlName="agreetc">
-                                    <label for="agreetc" class="form-check-inline">Terms and Conditions</label>
-                                </div>
-                            </div> -->
                             <div class="form form-group offset-md-2">
                                 <button class="btn btn-primary" type="submit">Login</button>
                             </div>
