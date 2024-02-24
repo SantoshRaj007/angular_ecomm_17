@@ -9,22 +9,21 @@
             "email": "admin@gmail.com",
             "password": "123456",
             "address":{
+                "id": 1,
                 "addLine1": "Pandav Nagar",
                 "addLine2": "Mayur Vihar Phase-1",
                 "city": "New Delhi",
                 "state": "Delhi",
-                "zipcode": "110091"
+                "zipCode": "110091"
             },
             "language": [
-                "English",
-                "Hindi",
-                "Bhojpuri"
+                "English"
             ],
             "gender": "Male",
             "aboutYou": "I am a programmer....",
             "uploadPhoto": "santosh.png",
             "agreetc": true,
-            "role": "admin",
+            "role": "buyer",
             "id": 1
         },
         { 
@@ -34,24 +33,48 @@
             "dob": "1994-01-05",
             "email": "pradeep@gmail.com",
             "password": "123456",
-            "address":{
+            "address": {
+                "id" : 2,
                 "addLine1": "Pandav Nagar",
                 "addLine2": "Mayur Vihar Phase-1",
                 "city": "New Delhi",
                 "state": "Delhi",
-                "zipcode": "110091"
+                "zipCode": "110091"
             },
             "language": [
-                "English",
-                "Hindi",
-                "Bhojpuri"
+                "Hindi"
             ],
             "gender": "Male",
             "aboutYou": "Angular Developer....",
             "uploadPhoto": "pradeep.png",
             "agreetc": true,
-            "role": "admin",
+            "role": "seller",
             "id": 2
+        },
+        { 
+            "name": "Kumar Singh",
+            "mobNumber": "1234567890",
+            "age": 29,
+            "dob": "1994-01-05",
+            "email": "kumar@gmail.com",
+            "password": "123456",
+            "address":{
+                "id": 0,
+                "addLine1": "Pandav Nagar",
+                "addLine2": "Mayur Vihar Phase-1",
+                "city": "New Delhi",
+                "state": "Delhi",
+                "zipCode": "110091"
+            },
+            "language": [
+                "Hindi"
+            ],
+            "gender": "Male",
+            "aboutYou": "I am a programmer....",
+            "uploadPhoto": "santosh.png",
+            "agreetc": true,
+            "role": "admin",
+            "id": 3
         }
     ],
     "products": 
