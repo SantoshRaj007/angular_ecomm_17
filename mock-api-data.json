@@ -57,7 +57,7 @@
             "age": 29,
             "dob": "1994-01-05",
             "email": "kumar@gmail.com",
-            "password": "123456",
+            "password": "12345",
             "address":{
                 "id": 0,
                 "addLine1": "Pandav Nagar",
