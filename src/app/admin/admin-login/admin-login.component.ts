@@ -32,7 +32,7 @@ export class AdminLoginComponent implements OnInit{
             } else {
                 alert("Invalide response")
             } 
-            console.log(this.user_data);
+            // console.log(this.user_data);
         }, error=>{
             console.log("My Error", error)
         });
