@@ -1,16 +1,17 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { AdminService } from '../services/admin.service';
 import { User } from '../../core/Model/object-model';
+import { HttpClientModule } from '@angular/common/http';
 
-declare var JQuery:any;
+declare var $:any;
 
 @Component({
     selector: 'app-user-crud',
     standalone: true,
-    imports: [CommonModule],
+    imports: [CommonModule, HttpClientModule, FormsModule, ReactiveFormsModule],
     templateUrl: './user-crud.component.html',
     styleUrl: './user-crud.component.css'
 })
@@ -34,23 +35,23 @@ export class UserCrudComponent implements OnInit{
     ngOnInit(): void {
         this.getAllUser();
         this.addEditUserForm = this.formBuilder.group({
-            name:['', Validators.required],
-            mobNumber:['', Validators.required],
-            age:['', Validators.required],
-            dob:['', Validators.required],
-            email:['', Validators.required],
-            password:['', Validators.required],
-            addLine1:['', Validators.required],
-            addLine2:['', Validators.required],
-            city:['', Validators.required],
-            state:['', Validators.required],
-            zipCode:['', Validators.required],
-            language:['', Validators.required],
-            gender:['', Validators.required],
-            aboutYou:['', Validators.required],
-            uploadPhoto:['', Validators.required],
-            agreetc:['', Validators.required],
-            role:['', Validators.required],
+            name: ['', Validators.required],
+            mobNumber: ['', Validators.required],
+            age: ['', Validators.required],
+            dob: ['', Validators.required],
+            email: ['', Validators.required],
+            password: ['', Validators.required],
+            addLine1: ['', Validators.required],
+            addLine2: ['', Validators.required],
+            city: ['', Validators.required],
+            state: ['', Validators.required],
+            zipCode: ['', Validators.required],
+            language: ['', Validators.required],
+            gender: ['', Validators.required],
+            aboutYou: ['', Validators.required],
+            uploadPhoto: ['', Validators.required],
+            agreetc: ['', Validators.required],
+            role: ['', Validators.required],
         })
     }
 
@@ -103,8 +104,9 @@ export class UserCrudComponent implements OnInit{
             role:this.user_reg_data.role
         }
         this.adminService.addUser(this.user_dto).subscribe(data=>{
+            this.addEditUserForm.reset();
             this.getAllUser();
-            JQuery('#addEditUserModal').modal('toggle');
+            $('#addEditUserModal').modal('toggle');
         }, error =>{
             console.log("My Error", error);
         })
@@ -127,11 +129,11 @@ export class UserCrudComponent implements OnInit{
                 password:this.single_user_data.password,
                 language:this.single_user_data.language,
                 gender:this.single_user_data.gender,
-                addLine1:this.single_user_data.addLine1,
-                addLine2:this.single_user_data.addLine2,
-                city:this.single_user_data.city,
-                state:this.single_user_data.state,
-                zipCode:this.single_user_data.zipCode,
+                addLine1:this.single_user_data.address.addLine1,
+                addLine2:this.single_user_data.address.addLine2,
+                city:this.single_user_data.address.city,
+                state:this.single_user_data.address.state,
+                zipCode:this.single_user_data.address.zipCode,
                 aboutYou:this.single_user_data.aboutYou,
                 uploadPhoto:'',
                 agreetc:this.single_user_data.agreetc,
@@ -142,7 +144,7 @@ export class UserCrudComponent implements OnInit{
         })
     }
 
-    uploadUser(){
+    updateUser(){
         if(this.addEditUserForm.invalid){
             alert('Error!! :-)\n\n' +JSON.stringify(this.addEditUserForm.value));
             return;
@@ -170,9 +172,10 @@ export class UserCrudComponent implements OnInit{
             uploadPhoto:(this.user_reg_data.uploadPhoto == ""? this.upload_file_name:this.user_reg_data.uploadPhoto),
             role:this.user_reg_data.role
         }
-        this.adminService.editUser(this.edit_user_id, this.user_dto).subscribe(data=>{
+        this.adminService.editUser(this.edit_user_id,this.user_dto).subscribe(data=>{
+            this.addEditUserForm.reset();
             this.getAllUser();
-            JQuery('#addEditUserModal').modal('toggle');
+            $('#addEditUserModal').modal('toggle');
         }, error =>{
             console.log("My Error", error);
         })

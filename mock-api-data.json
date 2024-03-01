@@ -1,199 +1,172 @@
 {
-    "user":
-    [
-        { 
-            "name": "Santosh Kumar Singh",
-            "mobNumber": "9891302162",
-            "age": 29,
-            "dob": "1994-01-05",
-            "email": "admin@gmail.com",
-            "password": "123456",
-            "address":{
-                "id": 1,
-                "addLine1": "Pandav Nagar",
-                "addLine2": "Mayur Vihar Phase-1",
-                "city": "New Delhi",
-                "state": "Delhi",
-                "zipCode": "110091"
-            },
-            "language": [
-                "English"
-            ],
-            "gender": "Male",
-            "aboutYou": "I am a programmer....",
-            "uploadPhoto": "santosh.png",
-            "agreetc": true,
-            "role": "buyer",
-            "id": 1
-        },
-        { 
-            "name": "Pradeep Kumar Singh",
-            "mobNumber": "9891302162",
-            "age": 29,
-            "dob": "1994-01-05",
-            "email": "pradeep@gmail.com",
-            "password": "123456",
-            "address": {
-                "id" : 2,
-                "addLine1": "Pandav Nagar",
-                "addLine2": "Mayur Vihar Phase-1",
-                "city": "New Delhi",
-                "state": "Delhi",
-                "zipCode": "110091"
-            },
-            "language": [
-                "Hindi"
-            ],
-            "gender": "Male",
-            "aboutYou": "Angular Developer....",
-            "uploadPhoto": "pradeep.png",
-            "agreetc": true,
-            "role": "seller",
-            "id": 2
-        },
-        { 
-            "name": "Kumar Singh",
-            "mobNumber": "1234567890",
-            "age": 29,
-            "dob": "1994-01-05",
-            "email": "kumar@gmail.com",
-            "password": "12345",
-            "address":{
-                "id": 0,
-                "addLine1": "Pandav Nagar",
-                "addLine2": "Mayur Vihar Phase-1",
-                "city": "New Delhi",
-                "state": "Delhi",
-                "zipCode": "110091"
-            },
-            "language": [
-                "Hindi"
-            ],
-            "gender": "Male",
-            "aboutYou": "I am a programmer....",
-            "uploadPhoto": "santosh.png",
-            "agreetc": true,
-            "role": "admin",
-            "id": 3
-        }
-    ],
-    "products": 
-    [
-        {
-          "id": 1,
-          "name": "OnePlus Open",
-          "mrp": 139999.0,
-          "dp": 499.0,
-          "uploadDesc": "Lighter than any Fold at 239 grams, weighs just like a Pro Max. The Open is all sized up for a familiar hold.",          
-          "uploadPhoto": "https://image01-in.oneplus.net/ebp/202310/17/1-m00-52-39-cpgm7muuomkaeziaaale9r-nxtm551.png",
-          "status": "publish"
-        },
-        {
-          "id": 2,
-          "name": "MSI PRO MP241X 24-Inch Full HD Computer Monitor - Professional LED Monitor with 75Hz Refresh Rate, Anti-Glare & Anti-Flicker Technology PC Monitor for Desktop (Black)",
-          "mrp": 7399.0,
-          "dp": 422.0,
-          "uploadDesc": "Efficient 23.8'' Monitor: Enhance your productivity with the 23.8'' MSI monitor, perfect for desktops and laptops with a standard VESA mount.",
-          "uploadPhoto": "https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/61rCRvmVUAL._SX679_.jpg",
-          "status": "publish"
-        },
-        {
-          "id": 3,
-          "name": "Lenovo V15 Intel Celeron N4500 15.6\" (39.62 cm) FHD (1920x1080) Antiglare 250 Nits Thin and Light Laptop (8GB RAM/256GB SSD/Windows 11 Home/Black/1Y Onsite/1.7 kg), 82QYA00MIN",
-          "mrp": 32999.0,
-          "dp": 726.0,
-          "uploadDesc": "Processor: Intel Celeron N4500 processor, base speed 1.1 Ghz, max speed 2.8 Ghz, 2 Cores, 4MB L3 smart cache | Memory: 8GB DDR4 RAM 2933 MHz, dual-channel capable | Storage: 256GB SSD M.2 upgradable up to 512GB SSD Operating System: Preloaded Windows 11 Home SL with Lifetime Validity Display: 15.6\" (39.62 cm) screen with (1920x1080) FHD Antiglare, 250 Nits display | Graphics: Intel UHD Graphics comes with DirectX 12 enables amazing graphics | Monitor Supports: Supports up to 2 independent displays Ports: 1x USB 2.0 | 1x USB 3.2 Gen 1 | 1x USB-C 3.2 Gen 1 (support data transfer) | 1x HDMI 1.4b | 1x Ethernet RJ-45 (LAN Port) | 1x Headphone / microphone combo jack (3.5mm) | 1x Power Connector Keyboard: 6-row, spill-resistant, multimedia Fn keys, SMB Service Hot key, numeric keypad | Touchpad: Buttonless Mylar surface multi-touch touchpad, supports Precision TouchPad",
-          "uploadPhoto": "https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/31uLEZHhMDL.jpg",
-          "status": "draft"
-        },
-        {
-          "id": 4,
-          "name": "Lenovo Tab P12| 12.7 Inch| Octa-Core Processor",
-          "mrp": 27000.0,
-          "dp": 726.0,
-          "uploadDesc": "Lenovo Tab P12| 12.7 Inch| 8 GB, 128 GB Expandable| 3K Display| 10200 mAh Battery| JBL Quad Speakers with Dolby Atmos|Wi-Fi 6 Certified| Octa-Core Processor|13 MP Front Camera (Storm Grey, ZACH0070IN)",
-          "uploadPhoto": "https://m.media-amazon.com/images/I/61ps0pf7SrL._SX679_.jpg",
-          "status": "draft"
-        },
-        {
-          "id": 5,
-          "name": "iphone15 pro",
-          "mrp": 120000.0,
-          "dp": 726.0,
-          "uploadDesc": "Lenovo Tab P12| 12.7 Inch| 8 GB, 128 GB Expandable| 3K Display| 10200 mAh Battery| JBL Quad Speakers with Dolby Atmos|Wi-Fi 6",
-          "uploadPhoto": "https://5.imimg.com/data5/SELLER/Default/2023/9/346254818/AT/RX/ZW/800983/iphone-15-pro-max-256-gb-black-titanium.jpg",
-          "status": "draft"
-        },
-        {
-          "id": 6,
-          "name": "HP Chromebook X360,Intel Celeron N4120,14-Inch (35.6 Cm)",
-          "mrp": 32000.0,
-          "dp": 726.0,
-          "uploadDesc": "4-core Intel Celeron N4120】4 threads and 4MB L2 cache boost productivity with blazing-fast processing speeds. Intel UHD graphics deliver stunning visuals for an enhanced viewing experience.",
-          "uploadPhoto": "https://m.media-amazon.com/images/I/619nJDbUDkL._SX679_.jpg",
-          "status": "inactive"
-        },
-        {
-          "id": 7,
-          "name": "HP 15s, AMD Ryzen 3 5300U, 15.6 inch(39.6cm) FHD Anti-Glare Laptop(8GB RAM/512 GB SSD/AMD Radeon Graphics/Win 11/MSO/Backlit Keyboard/Dual Speakers) 15s- eq2213AU",
-          "mrp": 32999.0,
-          "dp": 726.0,
-          "uploadDesc": "Processor: AMD Ryzen 3 5300U(up to 3.8 GHz max boost clock(2i),4 MB L3 cache, 4 cores, 8 threads)|Memory: 8 GB DDR4-3200 SDRAM (1 x 8 GB) Upto 16 GB DDR4-3200 MHz RAM (2 x 8 GB)|Storage: 512 GB PCIe NVMe M.2 SSD Display & Graphics : 39.6 cm (15.6\") diagonal",
-          "uploadPhoto": "https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/81pRWxXq16L._SX679_.jpg",
-          "status": "publish"
-        },
-        {
-          "id": 8,
-          "name": "Fujifilm Instax Wide 300 Instant Camera- White",
-          "mrp": 6999.0,
-          "dp": 726.0,
-          "uploadDesc": "The Fujifilm instax WIDE 300 is our largest format instax camera Built in flash & fill in flash mode Film size 108 (w) x 86 (H) cm. Twice as wide as instax mini film Improved ease of use of the camera includes a tripod socket, focal zoom dial and user friendly interface Two mode focusing, normal (0.9 m-3 m) and landscape (3 m plus) Programmed electronic shutter release, 1/64 sec - 1/200 sec",
-          "uploadPhoto": "https://m.media-amazon.com/images/I/71wvQU297aL._SX679_.jpg",
-          "status": "inactive"
-        },
-        {
-          "id": 9,
-          "name": "BLACKPOOL® 4K Waterproof Vlog Camera with Wide Angle Lens Underwater WiFi Video Action Camera",
-          "mrp": 2999.0,
-          "dp": 726.0,
-          "uploadDesc": "ULTRA HD VIDEO RESOLUTION: Shoot crystal-clear 4K/30FPS, 2.7K/30FPS, 1080P/60FPS, and 720P/120FPS videos with our 4K Action Camera. Perfect for vlogging, sports, and travel videos. WIDE ANGLE LENS: With a 170° super-wide-angle lens, capture more of your surroundings in every shot. Ideal for outdoor adventures, sports activities, and scenic shots.",
-          "uploadPhoto": "https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/61VwXeITFjL._SX679_.jpg",
-          "status": "publish"
-        },
-        {
-          "id": 10,
-          "name": "ASUS Vivobook 14, Intel Core i3-1115G4 11th Gen",
-          "mrp": 32990.0,
-          "dp": 726.0,
-          "uploadDesc": "ASUS Vivobook 14, Intel Core i3-1115G4 11th Gen, 14\" (35.56 cms) FHD, Thin and Light Laptop (8GB/512GB SSD/Windows 11/Office 2021/Transparent Silver/1.60 kg), X1400EA-EK322WS",
-          "uploadPhoto": "https://m.media-amazon.com/images/I/616TNXcZcHL._AC_UY327_FMwebp_QL65_.jpg",
-          "status": "inactive"
-        }
-    ],
-    "orders": [
-        {
-            "id": 1,
-            "userId": 3,
-            "sellerId": 2,
-            "product": {
-                "id": 1,
-                "name": "OnePlus Open",
-                "uploadPhoto": "https://image01-in.oneplus.net/ebp/202310/17/1-m00-52-39-cpgm7muuomkaeziaaale9r-nxtm551.png",
-                "uploadDesc": "Lighter than any Fold at 239 grams, weighs just like a Pro Max. The Open is all sized up for a familiar hold.",
-                "mrp": 32999.0,
-                "dp": 726.0,
-                "status": "publish"
-            },
-            "deliveryAddress": {
-                "id": 0,
-                "addLine1": "Bhore",
-                "addLine2": "Bhore Gopalganj",
-                "city": "Bhore",
-                "state": "Bihar",
-                "zipcode": 841426
-            },
-            "contact": "8567986231",
-            "dateTime": "18/2/2024"
-        }
-    ]
+  "user": [
+    {
+      "aboutYou": "PHP Developer",
+      "address": {
+        "id": 0,
+        "addLine1": "Bhore",
+        "addLine2": "Bhore Gopalganj",
+        "city": "Bhore",
+        "state": "Bihar",
+        "zipCode": 841426
+      },
+      "age": 29,
+      "agreetc": true,
+      "dob": "1994-01-05",
+      "email": "admin@gmail.com",
+      "gender": "Male",
+      "language": [
+        "Hindi"
+      ],
+      "mobNumber": "9891302162",
+      "name": "Santosh Singh",
+      "password": "123456",
+      "role": "admin",
+      "uploadPhoto": "C:\\fakepath\\avatar.png",
+      "id": "1"
+    },
+    {
+      "aboutYou": "Angular Developer",
+      "address": {
+        "id": 0,
+        "addLine1": "Delhi",
+        "addLine2": "Mayur Vihar Phase-1",
+        "city": "New-Delhi",
+        "state": "Delhi",
+        "zipCode": 110091
+      },
+      "age": 29,
+      "agreetc": true,
+      "dob": "1996-08-15",
+      "email": "pradeep@gmail.com",
+      "gender": "Male",
+      "language": [
+        "English"
+      ],
+      "mobNumber": "9711702404",
+      "name": "Pradeep Singh",
+      "password": "123456",
+      "role": "buyer",
+      "uploadPhoto": "C:\\fakepath\\avatar.png",
+      "id": "2"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "OnePlus Open",
+      "mrp": 139999,
+      "dp": 499,
+      "uploadDesc": "Lighter than any Fold at 239 grams, weighs just like a Pro Max. The Open is all sized up for a familiar hold.",
+      "uploadPhoto": "https://image01-in.oneplus.net/ebp/202310/17/1-m00-52-39-cpgm7muuomkaeziaaale9r-nxtm551.png",
+      "status": "publish"
+    },
+    {
+      "id": "2",
+      "name": "MSI PRO MP241X 24-Inch Full HD Computer Monitor - Professional LED Monitor with 75Hz Refresh Rate, Anti-Glare & Anti-Flicker Technology PC Monitor for Desktop (Black)",
+      "mrp": 7399,
+      "dp": 422,
+      "uploadDesc": "Efficient 23.8'' Monitor: Enhance your productivity with the 23.8'' MSI monitor, perfect for desktops and laptops with a standard VESA mount.",
+      "uploadPhoto": "https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/61rCRvmVUAL._SX679_.jpg",
+      "status": "publish"
+    },
+    {
+      "id": "3",
+      "name": "Lenovo V15 Intel Celeron N4500 15.6\" (39.62 cm) FHD (1920x1080) Antiglare 250 Nits Thin and Light Laptop (8GB RAM/256GB SSD/Windows 11 Home/Black/1Y Onsite/1.7 kg), 82QYA00MIN",
+      "mrp": 32999,
+      "dp": 726,
+      "uploadDesc": "Processor: Intel Celeron N4500 processor, base speed 1.1 Ghz, max speed 2.8 Ghz, 2 Cores, 4MB L3 smart cache | Memory: 8GB DDR4 RAM 2933 MHz, dual-channel capable | Storage: 256GB SSD M.2 upgradable up to 512GB SSD Operating System: Preloaded Windows 11 Home SL with Lifetime Validity Display: 15.6\" (39.62 cm) screen with (1920x1080) FHD Antiglare, 250 Nits display | Graphics: Intel UHD Graphics comes with DirectX 12 enables amazing graphics | Monitor Supports: Supports up to 2 independent displays Ports: 1x USB 2.0 | 1x USB 3.2 Gen 1 | 1x USB-C 3.2 Gen 1 (support data transfer) | 1x HDMI 1.4b | 1x Ethernet RJ-45 (LAN Port) | 1x Headphone / microphone combo jack (3.5mm) | 1x Power Connector Keyboard: 6-row, spill-resistant, multimedia Fn keys, SMB Service Hot key, numeric keypad | Touchpad: Buttonless Mylar surface multi-touch touchpad, supports Precision TouchPad",
+      "uploadPhoto": "https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/31uLEZHhMDL.jpg",
+      "status": "draft"
+    },
+    {
+      "id": "4",
+      "name": "Lenovo Tab P12| 12.7 Inch| Octa-Core Processor",
+      "mrp": 27000,
+      "dp": 726,
+      "uploadDesc": "Lenovo Tab P12| 12.7 Inch| 8 GB, 128 GB Expandable| 3K Display| 10200 mAh Battery| JBL Quad Speakers with Dolby Atmos|Wi-Fi 6 Certified| Octa-Core Processor|13 MP Front Camera (Storm Grey, ZACH0070IN)",
+      "uploadPhoto": "https://m.media-amazon.com/images/I/61ps0pf7SrL._SX679_.jpg",
+      "status": "draft"
+    },
+    {
+      "id": "5",
+      "name": "iphone15 pro",
+      "mrp": 120000,
+      "dp": 726,
+      "uploadDesc": "Lenovo Tab P12| 12.7 Inch| 8 GB, 128 GB Expandable| 3K Display| 10200 mAh Battery| JBL Quad Speakers with Dolby Atmos|Wi-Fi 6",
+      "uploadPhoto": "https://5.imimg.com/data5/SELLER/Default/2023/9/346254818/AT/RX/ZW/800983/iphone-15-pro-max-256-gb-black-titanium.jpg",
+      "status": "draft"
+    },
+    {
+      "id": "6",
+      "name": "HP Chromebook X360,Intel Celeron N4120,14-Inch (35.6 Cm)",
+      "mrp": 32000,
+      "dp": 726,
+      "uploadDesc": "4-core Intel Celeron N4120】4 threads and 4MB L2 cache boost productivity with blazing-fast processing speeds. Intel UHD graphics deliver stunning visuals for an enhanced viewing experience.",
+      "uploadPhoto": "https://m.media-amazon.com/images/I/619nJDbUDkL._SX679_.jpg",
+      "status": "inactive"
+    },
+    {
+      "id": "7",
+      "name": "HP 15s, AMD Ryzen 3 5300U, 15.6 inch(39.6cm) FHD Anti-Glare Laptop(8GB RAM/512 GB SSD/AMD Radeon Graphics/Win 11/MSO/Backlit Keyboard/Dual Speakers) 15s- eq2213AU",
+      "mrp": 32999,
+      "dp": 726,
+      "uploadDesc": "Processor: AMD Ryzen 3 5300U(up to 3.8 GHz max boost clock(2i),4 MB L3 cache, 4 cores, 8 threads)|Memory: 8 GB DDR4-3200 SDRAM (1 x 8 GB) Upto 16 GB DDR4-3200 MHz RAM (2 x 8 GB)|Storage: 512 GB PCIe NVMe M.2 SSD Display & Graphics : 39.6 cm (15.6\") diagonal",
+      "uploadPhoto": "https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/81pRWxXq16L._SX679_.jpg",
+      "status": "publish"
+    },
+    {
+      "id": "8",
+      "name": "Fujifilm Instax Wide 300 Instant Camera- White",
+      "mrp": 6999,
+      "dp": 726,
+      "uploadDesc": "The Fujifilm instax WIDE 300 is our largest format instax camera Built in flash & fill in flash mode Film size 108 (w) x 86 (H) cm. Twice as wide as instax mini film Improved ease of use of the camera includes a tripod socket, focal zoom dial and user friendly interface Two mode focusing, normal (0.9 m-3 m) and landscape (3 m plus) Programmed electronic shutter release, 1/64 sec - 1/200 sec",
+      "uploadPhoto": "https://m.media-amazon.com/images/I/71wvQU297aL._SX679_.jpg",
+      "status": "inactive"
+    },
+    {
+      "id": "9",
+      "name": "BLACKPOOL® 4K Waterproof Vlog Camera with Wide Angle Lens Underwater WiFi Video Action Camera",
+      "mrp": 2999,
+      "dp": 726,
+      "uploadDesc": "ULTRA HD VIDEO RESOLUTION: Shoot crystal-clear 4K/30FPS, 2.7K/30FPS, 1080P/60FPS, and 720P/120FPS videos with our 4K Action Camera. Perfect for vlogging, sports, and travel videos. WIDE ANGLE LENS: With a 170° super-wide-angle lens, capture more of your surroundings in every shot. Ideal for outdoor adventures, sports activities, and scenic shots.",
+      "uploadPhoto": "https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/61VwXeITFjL._SX679_.jpg",
+      "status": "publish"
+    },
+    {
+      "id": "10",
+      "name": "ASUS Vivobook 14, Intel Core i3-1115G4 11th Gen",
+      "mrp": 32990,
+      "dp": 726,
+      "uploadDesc": "ASUS Vivobook 14, Intel Core i3-1115G4 11th Gen, 14\" (35.56 cms) FHD, Thin and Light Laptop (8GB/512GB SSD/Windows 11/Office 2021/Transparent Silver/1.60 kg), X1400EA-EK322WS",
+      "uploadPhoto": "https://m.media-amazon.com/images/I/616TNXcZcHL._AC_UY327_FMwebp_QL65_.jpg",
+      "status": "inactive"
+    }
+  ],
+  "orders": [
+    {
+      "id": "1",
+      "userId": 3,
+      "sellerId": 2,
+      "product": {
+        "id": 1,
+        "name": "OnePlus Open",
+        "uploadPhoto": "https://image01-in.oneplus.net/ebp/202310/17/1-m00-52-39-cpgm7muuomkaeziaaale9r-nxtm551.png",
+        "uploadDesc": "Lighter than any Fold at 239 grams, weighs just like a Pro Max. The Open is all sized up for a familiar hold.",
+        "mrp": 32999,
+        "dp": 726,
+        "status": "publish"
+      },
+      "deliveryAddress": {
+        "id": 0,
+        "addLine1": "Bhore",
+        "addLine2": "Bhore Gopalganj",
+        "city": "Bhore",
+        "state": "Bihar",
+        "zipCode": 841426
+      },
+      "contact": "8567986231",
+      "dateTime": "18/2/2024"
+    }
+  ]
 }
