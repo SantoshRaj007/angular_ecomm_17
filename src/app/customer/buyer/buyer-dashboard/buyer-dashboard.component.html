@@ -1,1 +1,30 @@
-<p>buyer-dashboard works!</p>
+<div class="container mt-3">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <ul class="breadcrumb-item"><a href="">Buyer</a></ul>
+            <ul class="breadcrumb-item"><a routerLink="/buyer-dashboard">Product</a></ul>
+        </ol>
+    </nav>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4 product" *ngFor="let product of all_products">
+            <div class="card shadow-lg p-3 mb-5 bg-body rounded">
+                <img src="{{ product.uploadPhoto}}" alt="{{ product.name }}" class="bd-placeholder-img card-img-top" width="100%" height="225" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <div class="card-body">
+                    <h4 class="card-title">{{ product.name }}</h4>
+                    <p><span class="float-left"><strong>MRP </strong> : <del>{{product.mrp}}</del></span> <span class="float-left"> <strong> Discount Price </strong> : {{product.dp}}</span></p>
+                    <br>
+                    <p class="card-text product-desc">{{product.uploadDesc}}</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button type="button" (click)="addTOCart()" class="btn btn-lg btn-outline-primary">Add to cart</button>
+                            <button type="button" (click)="buyProduct(product.id)" class="btn btn-lg btn-outline-danger">Buy product</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

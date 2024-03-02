@@ -76,7 +76,7 @@
       "mrp": 32999,
       "dp": 726,
       "uploadDesc": "Processor: Intel Celeron N4500 processor, base speed 1.1 Ghz, max speed 2.8 Ghz, 2 Cores, 4MB L3 smart cache | Memory: 8GB DDR4 RAM 2933 MHz, dual-channel capable | Storage: 256GB SSD M.2 upgradable up to 512GB SSD Operating System: Preloaded Windows 11 Home SL with Lifetime Validity Display: 15.6\" (39.62 cm) screen with (1920x1080) FHD Antiglare, 250 Nits display | Graphics: Intel UHD Graphics comes with DirectX 12 enables amazing graphics | Monitor Supports: Supports up to 2 independent displays Ports: 1x USB 2.0 | 1x USB 3.2 Gen 1 | 1x USB-C 3.2 Gen 1 (support data transfer) | 1x HDMI 1.4b | 1x Ethernet RJ-45 (LAN Port) | 1x Headphone / microphone combo jack (3.5mm) | 1x Power Connector Keyboard: 6-row, spill-resistant, multimedia Fn keys, SMB Service Hot key, numeric keypad | Touchpad: Buttonless Mylar surface multi-touch touchpad, supports Precision TouchPad",
-      "uploadPhoto": "https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/31uLEZHhMDL.jpg",
+      "uploadPhoto": "https://p4-ofp.static.pub/fes/cms/2022/12/06/d3kftnq1r3gnfjw6o8eitcef8e0g01407329.png",
       "status": "draft"
     },
     {
@@ -146,7 +146,7 @@
   "orders": [
     {
       "id": "1",
-      "userId": 3,
+      "userId": 2,
       "sellerId": 2,
       "product": {
         "id": 1,
