@@ -49,6 +49,32 @@
       "role": "buyer",
       "uploadPhoto": "C:\\fakepath\\avatar.png",
       "id": "2"
+    },
+    {
+      "aboutYou": "Angular Developer",
+      "age": 28,
+      "agreetc": true,
+      "dob": "1995-08-15",
+      "email": "kumar@gmail.com",
+      "gender": "Male",
+      "address": {
+        "id": 0,
+        "addLine1": "F-244/12 Pandav Nagar",
+        "addLine2": "Mayur Vihar Phase-1",
+        "city": "Mayur Vihar Phase-1",
+        "state": "Delhi",
+        "zipCode": "110091"
+      },
+      "language":[
+        "English",
+        "Hindi"
+      ],
+      "mobNumber": "9711702404",
+      "name": "Kumar Singh",
+      "password": "123456",
+      "uploadPhoto": "C:\\fakepath\\avatar.png",
+      "role": "seller",
+      "id": 3
     }
   ],
   "products": [
