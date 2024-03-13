@@ -65,7 +65,7 @@
         "state": "Delhi",
         "zipCode": "110091"
       },
-      "language":[
+      "language": [
         "English",
         "Hindi"
       ],
@@ -74,7 +74,7 @@
       "password": "123456",
       "uploadPhoto": "C:\\fakepath\\avatar.png",
       "role": "seller",
-      "id": 3
+      "id": "3"
     }
   ],
   "products": [
